@@ -19,10 +19,8 @@ Foobar is a Python library for dealing with word pluralization.
 ## Methodology
 
 ### Main Idea
-<br/>
 
-> **Use Classifiers as filters!**
-<br/>
+**Use Classifiers as filters!**
 
 1. Traing instances to Filter
 2. Correctly Labeled Training instances
