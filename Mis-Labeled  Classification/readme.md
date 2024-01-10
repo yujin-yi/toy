@@ -1,7 +1,7 @@
 # Mis-Labeled Classification
 
 Foobar is a Python library for dealing with word pluralization.
-
+<br/>
 
 ## Background
 
@@ -10,15 +10,23 @@ Foobar is a Python library for dealing with word pluralization.
 * Data-entry error
 * Inadequacy of the information
 
-
 ## Releated Works
 
 * Learning with Label Noise
 * Label Cleansing
 * Label Noise Identification
 
-
 ## Methodology
+
+### Main Idea
+<br/>
+
+> **Use Classifiers as filters!**
+<br/>
+
+1. Traing instances to Filter
+2. Correctly Labeled Training instances
+3. Learning Algorithm to get fianl results
 
 ### Pipeline
 
@@ -36,5 +44,17 @@ the feature distribution learned during training.
 * Generalize well on noisy datasets.
 * Neural networks, especially with dropout layers are a natural choice in this setting.
 
-### Reference
+### Types of Mis-Labeled Classification for Filtering
+* **Single Algorithm Filter**
+  * Filtering is done by one algorithm
+  * Instance is marked as mislabeled if this algorithm tagged it as mislabeled
+* **Majority Vote Filter**
+  * Filtering is done by multiple algorithms
+  * Instance is marked as mislabeled if more than half of the algorithms tagged it as mislabeled
+* **Consensus Filter**
+  * Filtering is done by multiple algorithms
+  * Instance is marked as mislabeled if all of the algorithms tagged it as mislabeled
+
+## Reference
 1. [Identifying Mislabeled Instances in Classification Datasets](https://arxiv.org/pdf/1912.05283)
+2. [Handling mislabeled training data for classification](https://longjp.github.io/statcomp/projects/mislabeled.pdf)
