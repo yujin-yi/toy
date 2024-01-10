@@ -1,6 +1,6 @@
 # Mis-Labeled Classification
 
-Foobar is a Python library for dealing with word pluralization.
+Mis-Labeled Classification is specific classification mehod to deal with Data for supervised learning consists of incorrect labels for variety of reasons.
 <br/>
 
 ## Background
